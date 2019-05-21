@@ -3,46 +3,158 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Python Erzurum</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>PYERZURUM</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+
 </head>
 
 <body>
 
-    <div class="header">
-        <h1>PYERZURUM</h1>
+    <nav>
+        <div class="container clearfix">
+            <div id="logo-box">
+                <a href="{{ url_for('home') }}" class="logo text-uppercase">
+                    PYERZURUM
+                </a>
+            </div>
+            <div id="nav-links" class="responsive">
+                <ul>
 
+                    <li class="nav-item">
+                        <a href="{{ url_for('home') }}" class="nav-link text-uppercase nav-icon">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="{{ url_for('participation') }}" class="nav-link text-uppercase">
+                            KATILIM
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ url_for('about') }}" class="nav-link text-uppercase">
+                            HAKKINDA
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ url_for('contact') }}" class="nav-link text-uppercase">
+                            İLETİŞİM
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container">
+            <img id="profile-image" class="img-fluid" src="{{ url_for('static', filename='img/pyt.png') }}" alt="">
+            <h1 class="text-uppercase headerh2">python erzurum</h1>
+
+            <h2 class="headerh1">
+                Erzurum'da yazılımcıların veya yazılıma ilgi duyanların bir arada toplanıp, sohbet edip, ufuk açıcı konularla ilgili sunumlar dinlemesi amacıyla oluşturulmuş bir organizasyondur.
+            </h2>
+
+            <div>
+                <a href="https://www.eventbrite.com/e/pyerzurum-tickets-62198357963" target="_blank"; class="btn btn-primary-2 btn-xl page-scroll">Bilet Al</a>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+
+
+    <footer>
+        <div class="container clearfix">
+
+            <div class="col">
+                <h4 class="text-uppercase">Lokasyon</h4>
+                <p>
+                    Erzurum, Turkey
+                </p>
+            </div>
+            <div class="col">
+                <h4 class="text-uppercase">HESAPLARIMIZ</h4>
+                <ul>
+
+
+                    <li>
+                        <button class="btn btn-outline btn-social">
+                            <i class="fab fa-fw fa-google-plus-g"></i>
+                        </button>
+                    </li>
+
+                    <li>
+                        <button class="btn btn-outline btn-social">
+                            <a href="https://twitter.com/pyerzurum"; target="_blank"><i class="fab fa-fw fa-twitter"></i></a>
+                        </button>
+                    </li>
+
+
+
+                    <li>
+                        <button class="btn btn-outline btn-social">
+                            <a href="https://www.instagram.com/pyerzurum/?igshid=lh31ryfrxwik" target="_blank"><i class="fab fa-fw fa-instagram"></i></a>
+                        </button>
+                    </li>
+
+
+
+
+
+                </ul>
+            </div>
+            <div class="col">
+                <h4 class="text-uppercase">HAKKINDA</h4>
+                <p>
+                    Bir yazılım etkinliği
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+    <hr style="margin-right: 5%; margin-left: 5%; color: rgba(0,0,0,0.2)">
+
+    <div class="copyright">
+        <div class="container">
+            <small>
+                Created by © <a href="http://greatcode.co" target="_blank" ;>G R E A T C O D E</a>
+            </small>
+        </div>
     </div>
-    
-    
 
-    <section id="about">
-        <h2 class="text-uppercase" style="font-family: 'Cormorant Garamond', serif; letter-spacing: 5px;"></h2>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
+    <script>
+        $('.nav-icon').click(function() {
+            $('#nav-links').toggleClass("responsive");
+            return false;
+        });
 
-
-        <div id="about-text" class="clearfix">
-
-            <p style="opacity: 0.8">Erzurum'da yazılımcıların veya yazılıma ilgi duyanların bir arada toplanıp, sohbet edip, ufuk açıcı konularla ilgili sunumlar dinlemesi amacıyla oluşturulmuş bir organizasyondur.
-            </p>
-            <br>
-            <p style="opacity: 0.8">Katılım için herhangi bir şart yoktur. Yazılıma ilgi duyan, Python meraklısı veya sohbet etmek isteyen herkesi bekliyoruz.</p>
-            
-
-        </div>
-        
-        <br><br><br><br>
-
-        <div class="hayalet-btn">
-            <a class="ghost inverted" href="https://www.eventbrite.com/e/python-erzurum-tickets-61357846972?__twitter_impression=true%2Famp&__twitter_impression=true" target="_blank">BAŞVURU İÇİN TIKLAYIN </a>
-        </div>
-
-
-    </section>
-
-
-
-
+    </script>
 
 </body>
 

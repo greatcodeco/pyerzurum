@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>PYERZURUM</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    
+    <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <nav>
+        <div class="container clearfix">
+            <div id="logo-box">
+                <a href="{{ url_for('home') }}" class="logo text-uppercase">
+                    PYERZURUM
+                </a>
+            </div>
+            <div id="nav-links" class="responsive">
+                <ul>
+
+                    <li class="nav-item">
+                        <a href="{{ url_for('home') }}" class="nav-link text-uppercase nav-icon">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="{{ url_for('participation') }}" class="nav-link text-uppercase">
+                            KATILIM
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ url_for('about') }}" class="nav-link text-uppercase">
+                            HAKKINDA
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ url_for('contact') }}" class="nav-link text-uppercase">
+                            İLETİŞİM
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+    <section id="about">
+        <h2 class="text-uppercase" style="font-family: 'Cinzel', serif;">PYTHON ERZURUM</h2>
+
+        <div class="katilim">
+            <div class="katilim-baslik">
+                <h2>Etkinlik Bilgileri</h2>
+            </div>
+
+            <div class="katilim-aciklama">
+                <ul style="list-style:disc;">
+                    <li>Etkinlik Günü : 24.05.2019</li>
+                    <li>Etkinlik Saati : 21.00</li>
+                    <li>Yer : Teknokent</li>
+                </ul>
+
+
+            </div>
+        </div>
+
+        <div class="katilim" style="margin-bottom: 50px;">
+            <div class="katilim-baslik">
+                <h2> Etkinlik Programı</h2>
+            </div>
+
+            <div class="katilim-aciklama">
+
+                <ul style="list-style:disc;">
+                    <li>21:00 - Giriş/Sohbet</li>
+                    <li>21:30 - Sunum</li>
+                    <li>22:00 - Çay/Kahve/Sohbet</li>
+                    <li>22:30 - Yazılım üzerine konular</li>
+                </ul>
+
+
+            </div>
+        </div>
+
+        <div class="katilim">
+            <div class="katilim-baslik">
+                <h2> Etkinlik Konusu</h2>
+            </div>
+
+            <div class="katilim-aciklama">
+                <li>Python ile Backend</li>
+                <li>Web nedir? Web nasıl çalışır?</li>
+                <li>Web programlama teknolojileri</li>
+                <li>Django, Flask vb.</li>
+
+
+            </div>
+        </div>
+
+        <div class="biletaldiv">
+
+            <a href="https://www.eventbrite.com/e/pyerzurum-tickets-62198357963"><button class="biletal">Bilet Al</button></a>
+
+        </div>
+
+
+    </section>
+
+    <section id="about"></section>
+    
+    
+    
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	
+	<script>
+	
+		$('.nav-icon').click(function(){			
+			$('#nav-links').toggleClass("responsive");
+			return false;
+		});	
+	
+	
+	
+	</script>
+
+</body>
+
+</html>
